@@ -1,0 +1,56 @@
+/* Style for the content container */
+.workshops { 
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.workshop {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.workshop:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for headings within workshop */
+.workshop h2 {
+    font-size: 2.0em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style for paragraphs within workshop */
+.workshop p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .workshop {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .workshop {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .workshop {
+        flex: 1 1 100%;
+    }
+}
